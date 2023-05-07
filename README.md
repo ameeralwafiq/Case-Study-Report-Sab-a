@@ -1,6 +1,7 @@
 # Case-Study-Report-Sab-a
 
 * This is the finding about CSRF attack
+
 CWE ID : 352
 
 CSRF stands for Cross Site Request Forgery. CSRF is a type of security vulnerability that can occur in web application when an attacker creates a malicious page that make a request to the server on behalf of the victim’s authentication or session identification cookie. Cross-site request forgery is the practise of tricking a user's browser into sending a request to a target web app on their behalf. The web application's trust in the user's browser is exploited by the attack. The user can be tricked into visiting a malicious website or clicking on a specifically created link, which the attacker can use to carry out unauthorised actions on the targeted web application.
@@ -15,18 +16,20 @@ In order to prevent CSRF attack, we can implement the anti - CSRF token. CSRF to
 Implementing anti-CSRF token: 
  
 In server side : php
-
+```
 <?php
 // Generate and store CSRF token in the user's session
 session_start();
 $csrfToken = bin2hex(random_bytes(32)); // Generate a random token
 $_SESSION['csrf_token'] = $csrfToken; // Store the token in the session
 ?>
+```
 
 In code above, the CSRF token generated using secure random value generation function ‘randoom_bytes()’. Then the generated token is stored in the user’s session ‘$_SESSION['csrf_token'’ for later validation.
 
 In HTML form 
 
+```
 <form action="https://kulliyyah.iium.edu.my/ahaskirkhs/wp-comments-post.php" method="post" id="commentform" class="comment-form">
   <!-- Include the CSRF token as a hidden input field -->
   <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
@@ -37,6 +40,7 @@ In HTML form
   <!-- Submit button -->
   <input type="submit" value="Submit">
 </form>
+```
 
 In HTML, the CSRF token included as hidden input field (  <input type="hidden" >). The ‘name’ attribute of the input field (name="csrf_token") is to identify when the form is submitted. The value attribute (value="<?php echo $csrfToken; ?>") is to dynamically insert token into HTML. 
 
