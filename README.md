@@ -1,6 +1,16 @@
-# Case-Study-Report-Sab-a
+# Case-Study-Report-Sab'a
 
-* This is the finding about CSRF attack
+## Table of Contents
+| No.| Alerts                     | Person in Charge |
+|----|:-------------:              | :---------------:|
+| 1 | CSRF attack                 | Tasya |
+| 2 | CSP                         |   |
+| 3 | JS Library                  |   |
+| 4 | Information Disclosure      |   |
+| 5 | Potential XSS               | Rashid |
+
+
+### CSRF attack
 CWE ID : 352
 
 CSRF stands for Cross Site Request Forgery. CSRF is a type of security vulnerability that can occur in web application when an attacker creates a malicious page that make a request to the server on behalf of the victim’s authentication or session identification cookie. Cross-site request forgery is the practise of tricking a user's browser into sending a request to a target web app on their behalf. The web application's trust in the user's browser is exploited by the attack. The user can be tricked into visiting a malicious website or clicking on a specifically created link, which the attacker can use to carry out unauthorised actions on the targeted web application.
