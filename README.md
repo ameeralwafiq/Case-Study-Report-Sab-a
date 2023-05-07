@@ -48,7 +48,8 @@ It will be challenging to match the CSRF token values if an attacker tries to fa
 
 In addition, preventing the XSS first could help to prevent CSRF. Enabling user interation whenever user needs to perform update to the sensitive data also able to mitigate the CSRF attacks because the attacker still needs to get the user’s actual password. This could be done by implementing reauthentication mechanisms, CAPTCHA challenges, and one time token. 
 
-*REFERENCES
+* REFERENCES
+
 Cross Site Request Forgery (CSRF). (n.d.). OWASP Foundation. Retrieved May 7, 2023, 
     from https://owasp.org/www-community/attacks/csrf
 CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved May 7, 2023, 
