@@ -79,3 +79,9 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     from https://www.acunetix.com/websitesecurity/csrf-attacks/
 6 CSRF Mitigation Techniques You Must Know. (2022, May 4). Bright Security. Retrieved May 7, 2023,
     from https://brightsec.com/blog/csrf-mitigation/#double-submitting-cookies
+    
+    
+### 2. CSP
+### 3. JS Library
+### 4. Information Disclosure
+### 5. Potential XSS
