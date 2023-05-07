@@ -16,7 +16,7 @@ In order to prevent CSRF attack, we can implement the anti - CSRF token. CSRF to
 Implementing anti-CSRF token: 
  
 In server side : php
-```
+``` PHP
 <?php
 // Generate and store CSRF token in the user's session
 session_start();
@@ -29,7 +29,7 @@ In code above, the CSRF token generated using secure random value generation fun
 
 In HTML form 
 
-```
+``` HTML
 <form action="https://kulliyyah.iium.edu.my/ahaskirkhs/wp-comments-post.php" method="post" id="commentform" class="comment-form">
   <!-- Include the CSRF token as a hidden input field -->
   <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
