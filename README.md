@@ -11,9 +11,9 @@
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
 | 1 | CSRF attack                 | Tasya |
-| 2 | CSP                         |   |
-| 3 | JS Library                  |   |
-| 4 | Information Disclosure      |   |
+| 2 | CSP                         | Ghozi |
+| 3 | JS Library                  | Ameer |
+| 4 | Information Disclosure      | Rahat |
 | 5 | Potential XSS               | Rashid |
 
 
