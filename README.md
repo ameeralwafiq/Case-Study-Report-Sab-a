@@ -3,7 +3,6 @@
 <<<<<<< HEAD
 * This is the finding about CSRF attack
 
-=======
 ## Table of Contents
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
