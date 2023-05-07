@@ -1,7 +1,21 @@
-# Case-Study-Report-Sab-a
+# Case-Study-Report-Sab'a
 
+<<<<<<< HEAD
 * This is the finding about CSRF attack
 
+=======
+## Table of Contents
+| No.| Alerts                     | Person in Charge |
+|----|:-------------:              | :---------------:|
+| 1 | CSRF attack                 | Tasya |
+| 2 | CSP                         |   |
+| 3 | JS Library                  |   |
+| 4 | Information Disclosure      |   |
+| 5 | Potential XSS               | Rashid |
+
+
+### CSRF attack
+>>>>>>> a3cf62c766ce6da1b19effb663a257d472340230
 CWE ID : 352
 
 CSRF stands for Cross Site Request Forgery. CSRF is a type of security vulnerability that can occur in web application when an attacker creates a malicious page that make a request to the server on behalf of the victim's authentication or session identification cookie. Cross-site request forgery is the practise of tricking a user's browser into sending a request to a target web app on their behalf. The web application's trust in the user's browser is exploited by the attack. The user can be tricked into visiting a malicious website or clicking on a specifically created link, which the attacker can use to carry out unauthorised actions on the targeted web application.
@@ -52,7 +66,7 @@ Another way to mitigate the CSRF attack is to apply the double submitting cookie
 
 It will be challenging to match the CSRF token values if an attacker tries to fake a request by submitting a form from a different website because they won't have access to the user's CSRF token cookie.
 
-In addition, preventing the XSS first could help to prevent CSRF. Enabling user interation whenever user needs to perform update to the sensitive data also able to mitigate the CSRF attacks because the attacker still needs to get the user’s actual password. This could be done by implementing reauthentication mechanisms, CAPTCHA challenges, and one time token. 
+In addition, preventing the XSS first could help to prevent CSRF. Enabling user interation whenever user needs to perform update to the sensitive data also able to mitigate the CSRF attacks because the attacker still needs to get the user's actual password. This could be done by implementing reauthentication mechanisms, CAPTCHA challenges, and one time token. 
 
 * REFERENCES
 
