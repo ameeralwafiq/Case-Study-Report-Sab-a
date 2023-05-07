@@ -10,7 +10,7 @@
 ## Table of Contents
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
-| 1 | CSRF attack                 | Tasya |
+| 1 | CSRF Attack                 | Tasya |
 | 2 | CSP                         | Ghozi |
 | 3 | JS Library                  | Ameer |
 | 4 | Information Disclosure      | Rahat |
