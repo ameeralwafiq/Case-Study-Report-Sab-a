@@ -1,12 +1,12 @@
 # Case-Study-Report-Sab'a
 ## Group Member Details 
 | No.| Names                     | Matric No. |
-|----|:-------------:              | :---------------:|
-| 1 | CSRF attack                 | Tasya |
-| 2 | CSP                         |   |
-| 3 | JS Library                  |   |
-| 4 | Information Disclosure      |   |
-| 5 | Potential XSS               | Rashid |
+|----|:-------------:            | :---------------:|
+| 1 | AMEER AL-WAFIQ BIN NORAZAM | 2119005 |
+| 2 | SALSABILA TASYA HARRIS     | 1914606 |
+| 3 | ROBBANI GHOZI FIKRI        | 1832765 |
+| 4 | ABDUL RASHID BIN NUHAIRI   | 1911767 |
+| 5 |                            ||
 ## Table of Contents
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
