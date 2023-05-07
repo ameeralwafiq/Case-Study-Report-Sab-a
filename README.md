@@ -82,6 +82,10 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     
     
 ### 2. CSP
+- (Ghozi)
 ### 3. JS Library
+- (Ameer)
 ### 4. Information Disclosure
+- (Rahat)
 ### 5. Potential XSS
+- (Rashid)
