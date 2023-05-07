@@ -14,7 +14,7 @@
 | 5 | Potential XSS               | Rashid |
 
 
-### CSRF attack
+### 1. CSRF attack
 >>>>>>> a3cf62c766ce6da1b19effb663a257d472340230
 CWE ID : 352
 
