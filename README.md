@@ -1,8 +1,12 @@
 # Case-Study-Report-Sab'a
-
-<<<<<<< HEAD
-* This is the finding about CSRF attack
-
+## Group Member Details 
+| No.| Names                     | Matric No. |
+|----|:-------------:              | :---------------:|
+| 1 | CSRF attack                 | Tasya |
+| 2 | CSP                         |   |
+| 3 | JS Library                  |   |
+| 4 | Information Disclosure      |   |
+| 5 | Potential XSS               | Rashid |
 ## Table of Contents
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
