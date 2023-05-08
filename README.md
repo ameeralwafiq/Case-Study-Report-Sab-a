@@ -11,26 +11,26 @@
 ## Table of Contents
 | No. | Sub| Content                                                                                                                      | Person in Charge |
 |-----|:--:|:-------------:                                                                                                               | :---------------:|
-| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#brief-description)          | All |
-| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#objectives)                          | All |
-| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#alerts)                                 | All |
-| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#1-csrf-attack)                     | Tasya |
-| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#2-csp)                                     | Ghozi |
-| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#3-js-library)                       | Ameer |
-| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#4-information-disclosure) | Rahat |
-| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/edit/main/README.md#5-potential-xss)                 | Rashid |
+| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#brief-description)          | All |
+| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#objectives)                          | All |
+| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#alerts)                                 | All |
+| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#1-csrf-attack)                     | Tasya |
+| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#2-csp)                                     | Ghozi |
+| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#3-js-library)                       | Ameer |
+| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#4-information-disclosure) | Rahat |
+| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#5-potential-xss)                 | Rashid |
 
 
-## Brief Description
+## 1.0 Brief Description
 - 
 In this case study, https://kulliyyah.iium.edu.my/koe/#  its web application vulnerability will be evaluated. This website is serves a platform to share wide range of information and resources about engineering faculty in IIUM. This website serves as virtual gateways to the institution, providing a range of features and sections that satisfy the requirements of different users. Generally, this website gives an overview of Kuliyyah of Engineering IIUM faculty, including information on its vision, mission, and building layout. The profile of faculty officers and staff also included, with the purpose of show their credentials, areas of interest om research, as well as their contact details. Visitors are kept up to date on the most recent accomplishments, advancements, and future events within the academic community through the news and events pages.  
 
-## Objectives
+## 2.0 Objectives
 - The objectives of this case study is to identify the vulnerabilities that exists in the web application https://kulliyyah.iium.edu.my/koe/, evaluate the vulnerabilities of the web application and find the ways to prevent and mitigate the vulnerabilities of the web application...
 - 
 
-## Alerts
-### 1. CSRF attack
+## 3.0 Alerts
+### 3.1 CSRF attack
 >>>>>>> a3cf62c766ce6da1b19effb663a257d472340230
 CWE ID : 352
 
@@ -94,7 +94,7 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     from https://brightsec.com/blog/csrf-mitigation/#double-submitting-cookies
     
     
-### 2. CSP
+### 3.2 CSP
 - (Ghozi)
 >>>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
@@ -105,7 +105,7 @@ Based on the result after scan the vulnerabilities on OWASP, this website has 31
 
 One of the evidence is
 
-### 3. JS Library
+### 3.3 JS Library
 - (Ameer Al-Wafiq bin Norazam 2119005)
 >>>>>>> Passive (10003 - Vulnerable JS Library (Powered by Retire.js))
 CWE ID : 829
@@ -115,10 +115,10 @@ JavaScript Library or JS Library is a ... Meanwhile, Vulnerable JS Library can b
 Vulnerable JS Lirary of a web application can be exploited by attackes...
 Vulnerable JS Library are vulnerable because of...
 
-### 4. Information Disclosure
+### 3.4 Information Disclosure
 - (Rahat)
 - 
-### 5. Potential XSS
+### 3.5 Potential XSS
 - (Abdul Rashid bin Nuhairi - 1911767)
 >>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 CWE ID : 20
