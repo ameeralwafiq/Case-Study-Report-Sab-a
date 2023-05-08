@@ -127,6 +127,7 @@ Also, the developers need to ensure that a patch-management strategy takes place
 - Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, OWASP Dependency Check, retire.js, etc.
 - Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. 
 - Only obtain the set of JS Library components from official sources and from secure links. Prefer signed packages to reduce the chance of including the vulnerable ones.
+
 For the prevention specifically for the web application in this case study, the vulnerability lies in the JS Library for the jquery-ui and moment.js. These two libraries are vulnerable due to their versions are not the latest one.
 For the jquery-ui library used in this web application is the version 1.12.1 while the library for moment.js is the version 2.29.1. Both of the versions need to be updated and the updated version of both of them is need to be used in order to reduce the vulnerability.
 
