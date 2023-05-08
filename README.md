@@ -31,7 +31,7 @@ In this case study, https://kulliyyah.iium.edu.my/koe/#  its web application vul
 
 ## 3.0 Alerts
 ### 3.1 CSRF attack
->>>>>>> a3cf62c766ce6da1b19effb663a257d472340230
+>>>>> a3cf62c766ce6da1b19effb663a257d472340230
 CWE ID : 352
 
 CSRF stands for Cross Site Request Forgery. CSRF is a type of security vulnerability that can occur in web application when an attacker creates a malicious page that make a request to the server on behalf of the victim's authentication or session identification cookie. Cross-site request forgery is the practise of tricking a user's browser into sending a request to a target web app on their behalf. The web application's trust in the user's browser is exploited by the attack. The user can be tricked into visiting a malicious website or clicking on a specifically created link, which the attacker can use to carry out unauthorised actions on the targeted web application.
@@ -96,7 +96,7 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     
 ### 3.2 CSP
 - (Ghozi)
->>>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
+>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
 
 Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution.
@@ -120,7 +120,7 @@ Vulnerable JS Library are vulnerable because of...
 - 
 ### 3.5 Potential XSS
 - (Abdul Rashid bin Nuhairi - 1911767)
->>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
+>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 CWE ID : 20
 
 Here are the results from OWASP ZAP that has been noted and its brief.
