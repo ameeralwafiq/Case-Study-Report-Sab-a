@@ -110,23 +110,26 @@ One of the evidence is
 >>>>>>> Passive (10003 - Vulnerable JS Library (Powered by Retire.js))
 CWE ID : 829
 
+#### Identification
 JavaScript Library or JS Library is a collection of pre-written JavaScript codes that can be easily integrated with application projects. These libraries can provide a variety of benefits such as performance improvement, cross-browser compatibility and best practices to follow the latest development trends.
 
 The Vulnerable JS Library is a common security issue that occurs when a web application uses outdated or unpatched JavaScript libraries. The users cannot ignore the updates as using a library with missing security patches can make the web application easily exploited.
 
-Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically enjoy the benefit of being heavily audited. This may mean that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.  Accurately identifying which library vulnerabilities apply to the web application can be difficult, so we recommend applying all available security updates regardless.
+Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically have a lot of users taking care of them. This means that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.
 
+#### Evaluation 
 For this case study web application, which is the KOE official website, the web application has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system. 
 
-The product must successfully trust any third-party functionality it incorporates, whether it be a web widget, library, or other source of capability. The feature could be malicious in nature if there aren't enough security measures in place (either because it originates from an unreliable source, is faked, or was altered while in route from a reliable source). Additionally, the functionality may have flaws of its own, or it may allow access to other features and state data that should be kept private to the base system, such as system state data, sensitive application data, or the DOM of a web application. Depending on the included functionality, this could have a variety of negative effects, but some examples include the introduction of malware, information exposure due to the provision of excessive privileges or permissions to the untrusted functionality, and DOM-based XSS.
+The risk for the Vulnerable JS Library is this web application is determined as 'Medium'
 
+#### Mitigation
 The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
 - This includes remove unused dependencies, unnecessary features, components, files, and documentation.
 - Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, OWASP Dependency Check, retire.js, etc.
 - Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. 
 - Only obtain the set of JS Library components from official sources and from secure links. Prefer signed packages to reduce the chance of including the vulnerable ones.
 
-For the prevention specifically for the web application in this case study, the vulnerability lies in the JS Library for the jquery-ui and moment.js. These two libraries are vulnerable due to their versions are not the latest one.
+Accurately identifying which library vulnerabilities in the web application can be difficult, so it is better to apply all available security updates regardless. For the vulnerabilities specifically for the web application in this case study, the vulnerability lies in the JS Library for the jquery-ui and moment.js. These two libraries are vulnerable due to their versions are not the latest one.
 For the jquery-ui library used in this web application is the version 1.12.1 while the library for moment.js is the version 2.29.1. Both of the versions need to be updated and the updated version of both of them is need to be used in order to reduce the vulnerability.
 
 
