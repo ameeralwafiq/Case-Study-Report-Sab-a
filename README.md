@@ -6,7 +6,7 @@
 | 2 | SALSABILA TASYA HARRIS     | 1914606 |
 | 3 | ROBBANI GHOZI FIKRI        | 1832765 |
 | 4 | ABDUL RASHID BIN NUHAIRI   | 1911767 |
-| 5 |                            ||
+| 5 | MD MOSTAFIZUR RAHMAN RAHAT | 1823811 |
 ## Table of Contents
 | No.| Alerts                     | Person in Charge |
 |----|:-------------:              | :---------------:|
@@ -98,7 +98,15 @@ Based on the result after scan the vulnerabilities on OWASP, this website has 31
 One of the evidence is
 
 ### 3. JS Library
-- (Ameer)
+- (Ameer Al-Wafiq bin Norazam 2119005)
+>>>>>>> Passive (10003 - Vulnerable JS Library (Powered by Retire.js))
+CWE ID : 829
+
+JavaScript Library or JS Library is a ... Meanwhile, Vulnerable JS Library can be said when a JS Library used in the web application is vulnerable to attacks from the outside.
+
+Vulnerable JS Lirary of a web application can be exploited by attackes...
+Vulnerable JS Library are vulnerable because of...
+
 ### 4. Information Disclosure
 - (Rahat)
 ### 5. Potential XSS
