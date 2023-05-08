@@ -236,10 +236,16 @@ The outcome of an automated OWASP scan for information disclosure is as follows:
 - Source: Passive (10023 - Information Disclosure - Debug Error Messages)
 
 Risk : The risk of information disclosure is low when the potential for abuse or damage is low. Thus, disclosing some sensitive information has no significant effect.
+
+Confidence : Medium confidence suggests there is some evidence or suggestion that the given information is sensitive, but there is still a little uncertainty or doubt. Thus, the provided information may represent a danger or threat, but additional study may be required to prove its authenticity. In some cases, the confidence level of information disclosure may also be affected by the severity or potential impact of the disclosed information. the exposed information involves sensitive personal or financial data or might cause considerable damages or financial loss, the impact may be greater.
+
 CWE ID - 200 : CWE-200 is the CWE designation for "Exposure of Sensitive Information to an Unauthorised Actor" in software security. A security breach occurs when confidential information is accidentally shared with the wrong person or system. Passwords, bank data, personal identifying information, and other private data are all sensitive information that might be hacked.
+
 WASC ID - 13 : For online applications, "Information Leakage and Improper Error Handling" is WASC (Web Application Security Consortium) ID 13's area of concern. Information exposure through error messages, insecure error handling, and debug information leaking are all examples of vulnerabilities in this class that might compromise a website's or server's security.
+
 Passive - 10023 : "Passive (10023 - Information Disclosure - Debug Error Messages)" may refer to a web application vulnerability that exposes sensitive data via debug error messages.
- Attackers may leverage stack traces, variable names, and database queries in debugging error messages to find and exploit program vulnerabilities
+ Attackers may leverage stack traces, variable names, and database queries in debugging error messages to find and exploit program vulnerabilities.
+ 
 #### Mitigation
 Information disclosure security risks are serious. They enable hackers to get valuable and sensitive information about their target by doing simple tests or searching public sites. 
 - Avoid sending response headers or background information that reveals backend technology type, version, or configuration from the website's server.
