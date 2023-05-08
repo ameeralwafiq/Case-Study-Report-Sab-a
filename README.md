@@ -110,10 +110,9 @@ URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
 - Confidence: high
 - CWE ID: 693
 - WASC ID: 15
+- Source: Passive (10038 - Content Security Policy (CSP) Header Not Set)
 
-Source: Passive (10038 - Content Security Policy (CSP) Header Not Set)
-
-Evaluation using the Common Vulnerability Scoring System (CVSS)
+#### Evaluation using the Common Vulnerability Scoring System (CVSS)
 
 Impact on Confidentiality, Integrity, and Availability:
 Confidentiality: The lack of a CSP header can allow attackers to steal sensitive information from the website's users, such as login credentials or personal information. This can have a high impact on the confidentiality of the website's data. CVSS score: 7.0
@@ -128,16 +127,16 @@ The likelihood of the vulnerability being exploited is high, as attacks like XSS
 Level of Access Required to Exploit the Vulnerability:
 The level of access required to exploit the vulnerability is low, as attacks can be carried out using a standard web browser. CVSS score: 3.0
 
-Base Score = (0.6 * Impact + 0.4 * Exploitability - 1.5) * f(Impact)
-Base Score: 6.4 (rounded up from 6.33)
+- Base Score = (0.6 * Impact + 0.4 * Exploitability - 1.5) * f(Impact)
+- Base Score: 6.4 (rounded up from 6.33)
 
 In conclusion, the lack of a CSP header on a website can be evaluated as a high-severity vulnerability with a CVSS base score of 6.4. Website owners should take immediate steps to implement a CSP header to mitigate the risk of attacks that exploit this vulnerability.
 
-Prevent the vulnerability:
-Define which sources of content are allowed to be loaded on the website.
-Set the CSP header using the Content-Security-Policy HTTP header.
-Test the CSP header to ensure it's not blocking legitimate content.
-Monitor and update the CSP header as needed to address new vulnerabilities.
+#### Prevent the vulnerability:
+- Define which sources of content are allowed to be loaded on the website.
+- Set the CSP header using the Content-Security-Policy HTTP header.
+- Test the CSP header to ensure it's not blocking legitimate content.
+- Monitor and update the CSP header as needed to address new vulnerabilities.
 
 This is an example of how the CSP header looks like:
 ```HTML
