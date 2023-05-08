@@ -110,8 +110,20 @@ Vulnerable JS Library are vulnerable because of...
 
 ### 4. Information Disclosure
 - (Rahat)
+- 
 ### 5. Potential XSS
 - (Abdul Rashid bin Nuhairi - 1911767)
 >>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 CWE ID : 20
+
+Here are the results from OWASP ZAP that has been noted and its brief.
+
+Risk: informational - "Risk: informational" means that the vulnerability identified by the tool does not pose an immediate threat or allow for direct exploitation, but provides information that could be used by an attacker to further exploit vulnerabilities or launch a more sophisticated attack. These types of vulnerabilities do not usually require immediate remediation, but should be addressed as part of an overall security program.
+
+Confidence: low - "Confidence: low" means that the tool is not completely certain that the identified vulnerability exists. The confidence level is based on the reliability and accuracy of the tool's detection mechanisms, and is influenced by various factors such as the complexity of the application, the depth of the scan, and the level of interaction with the target.
+
+Source: passive (10031) - "Source: passive (10031)" refers to the method used by the tool to detect the vulnerability. "Passive" means that the tool is monitoring network traffic and analyzing responses from the target, without actually sending any payloads or inputs that could affect the application. "10031" is a unique identifier for the specific plugin or rule that detected the vulnerability. In this case, it could refer to a plugin or rule related to information disclosure or sensitive data leakage.
+
+CWE ID: 20 refers to the Common Weakness Enumeration (CWE) identifier for the vulnerability category "Improper Input Validation." CWE is a community-developed dictionary of common software security weaknesses, which provides a standardized language for describing security vulnerabilities in software and hardware.
+Specifically, CWE ID: 20 refers to cases where input from a user or an external system is not properly validated, allowing an attacker to inject malicious data into the system or execute unintended actions.
 
