@@ -111,4 +111,7 @@ Vulnerable JS Library are vulnerable because of...
 ### 4. Information Disclosure
 - (Rahat)
 ### 5. Potential XSS
-- (Rashid)
+- (Abdul Rashid bin Nuhairi - 1911767)
+>>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
+CWE ID : 20
+
