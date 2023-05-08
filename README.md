@@ -199,7 +199,7 @@ For the jquery-ui library used in this web application is the version 1.12.1 whi
 
 Developers can use update the jquery-ui to version 1.13.2 where the issue is fixed based on CVE-2022-31160 where version prior to 1.13.2 are potentially vulnerable to cross-site scripting.
 
-* REFERENCES
+#### REFERENCES
 * JavaScript Library and Vulnerable JavaScript Library description,
  - https://www.iothreat.com/blog/vulnerable-js-library-2#:~:text=The%20Vulnerable%20JS%20Library%20is,cause%20damage%20to%20the%20application.
  - https://portswigger.net/kb/issues/00500080_vulnerable-javascript-dependency
