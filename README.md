@@ -107,9 +107,13 @@ This is the result based on the automated scan on OWASP:
 URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
 
 Risk: medium
+
 Confidence: high
+
 CWE ID: 693
+
 WASC ID: 15
+
 Source: Passive (10038 - Content Security Policy (CSP) Header Not Set)
 
 Evaluation using the Common Vulnerability Scoring System (CVSS)
