@@ -99,62 +99,11 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
 >>>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
 
-Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution.
 
-For a website without a CSP header, the impact on confidentiality, integrity, and availability can be high. The likelihood of the vulnerability being exploited can also be high since attacks like XSS and clickjacking are commonly exploited by attackers. The level of access required to exploit the vulnerability can be low since these attacks can be carried out using a standard web browser.
+Based on the result after scan the vulnerabilities on OWASP, this website has 314 absences of anti-CSRF tokens on the HTML form.
 
-This is the result based on the automated scan on OWASP:
-
-- URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
-- Risk: medium
-- Confidence: high
-- CWE ID: 693
-- WASC ID: 15
-- Source: Passive (10038 - Content Security Policy (CSP) Header Not Set)
-
-#### Evaluation using the Common Vulnerability Scoring System (CVSS)
-
-Impact on Confidentiality, Integrity, and Availability:
-
-Confidentiality: The lack of a CSP header can allow attackers to steal sensitive information from the website's users, such as login credentials or personal information. This can have a high impact on the confidentiality of the website's data. CVSS score: 7.0
-
-Integrity: Without a CSP header, attackers can modify the website's content, including injecting malicious scripts, defacing the website, or manipulating user data. This can have a high impact on the website's integrity. CVSS score: 7.0
-
-Availability: Attackers can also launch a distributed denial-of-service (DDoS) attack on the website, which can make it unavailable to legitimate users. This can have a moderate to high impact on the website's availability. CVSS score: 5.0
-
-Likelihood of the Vulnerability Being Exploited:
-The likelihood of the vulnerability being exploited is high, as attacks like XSS, clickjacking, and data injection are common and can be carried out with minimal technical knowledge or resources. CVSS score: 8.0
-
-Level of Access Required to Exploit the Vulnerability:
-The level of access required to exploit the vulnerability is low, as attacks can be carried out using a standard web browser. CVSS score: 3.0
-
-- Base Score = (0.6 * Impact + 0.4 * Exploitability - 1.5) * f(Impact)
-- Base Score: 6.4 (rounded up from 6.33)
-
-In conclusion, the lack of a CSP header on a website can be evaluated as a high-severity vulnerability with a CVSS base score of 6.4. Website owners should take immediate steps to implement a CSP header to mitigate the risk of attacks that exploit this vulnerability.
-
-#### Prevent the vulnerability:
-- Define which sources of content are allowed to be loaded on the website.
-- Set the CSP header using the Content-Security-Policy HTTP header.
-- Test the CSP header to ensure it's not blocking legitimate content.
-- Monitor and update the CSP header as needed to address new vulnerabilities.
-
-This is an example of how the CSP header looks like:
-```HTML
-<meta
-  http-equiv="Content-Security-Policy"
-  content="default-src 'self'; img-src https://kulliyyah.iium.edu.my/koe/; child-src 'none';" />
-
-```
-
-* REFERENCES
-* Content Security Policy (CSP) explanation, 
-    from https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP ,
-         https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html 
-* CVSS User Guide,
-    from https://www.first.org/cvss/user-guide 
-* CVSS Calculator,
-    from https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
+One of the evidence is
 
 ### 3.3 JS Library
 - (Ameer Al-Wafiq bin Norazam - 2119005)
@@ -169,7 +118,9 @@ The Vulnerable JS Library is a common security issue that occurs when a web appl
 Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically have a lot of users taking care of them. This means that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.
 
 #### Evaluation 
-For this case study web application, which is the KOE official website, the web application has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system. 
+For this case study web application, it has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system.
+
+
 
 The risk for the Vulnerable JS Library is this web application is determined as 'Medium'
 
