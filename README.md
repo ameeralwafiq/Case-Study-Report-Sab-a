@@ -205,10 +205,10 @@ Developers can use update the jquery-ui to version 1.13.2 where the issue is fix
  - https://portswigger.net/kb/issues/00500080_vulnerable-javascript-dependency
  - https://blog.qualys.com/vulnerabilities-threat-research/2023/01/16/detection-of-vulnerabilities-in-javascript-libraries
  - https://generalassemb.ly/blog/what-is-a-javascript-library/
- - https://cwe.mitre.org/data/definitions/829.html
 
 * Mitigation actions,
 - https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+- https://cwe.mitre.org/data/definitions/829.html
 
 * CVE-2022-31160 Detail,
   - https://nvd.nist.gov/vuln/detail/CVE-2022-31160
