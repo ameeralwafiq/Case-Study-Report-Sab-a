@@ -104,8 +104,8 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
 For a website without a CSP header, the impact on confidentiality, integrity, and availability can be high. The likelihood of the vulnerability being exploited can also be high since attacks like XSS and clickjacking are commonly exploited by attackers. The level of access required to exploit the vulnerability can be low since these attacks can be carried out using a standard web browser.
 
 This is the result based on the automated scan on OWASP:
-URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
 
+- URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
 - Risk: medium
 - Confidence: high
 - CWE ID: 693
@@ -115,6 +115,7 @@ URL: [https://kulliyyah.iium.edu.my/koe/](https://kulliyyah.iium.edu.my/koe/)
 #### Evaluation using the Common Vulnerability Scoring System (CVSS)
 
 Impact on Confidentiality, Integrity, and Availability:
+
 Confidentiality: The lack of a CSP header can allow attackers to steal sensitive information from the website's users, such as login credentials or personal information. This can have a high impact on the confidentiality of the website's data. CVSS score: 7.0
 
 Integrity: Without a CSP header, attackers can modify the website's content, including injecting malicious scripts, defacing the website, or manipulating user data. This can have a high impact on the website's integrity. CVSS score: 7.0
