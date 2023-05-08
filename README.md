@@ -163,18 +163,24 @@ This is an example of how the CSP header looks like:
 CWE ID : 829
 
 #### Identification
-JavaScript Library or JS Library is a collection of pre-written JavaScript codes that can be easily integrated with application projects. These libraries can provide a variety of benefits such as performance improvement, cross-browser compatibility and best practices to follow the latest development trends.
+JavaScript Library or JS Library is a collection of pre-written JavaScript codes that can be easily integrated with application projects. This re-writing of code and recognizing that certain JS functions need to be implemented multiple times led to the development of JavaScript libraries and frameworks. These libraries can provide a variety of benefits such as performance improvement, cross-browser compatibility and best practices to follow the latest development trends.
 
 The Vulnerable JS Library is a common security issue that occurs when a web application uses outdated or unpatched JavaScript libraries. The users cannot ignore the updates as using a library with missing security patches can make the web application easily exploited.
 
 Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically have a lot of users taking care of them. This means that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.
 
 #### Evaluation 
-For this case study web application, it has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system.
+This is the result for the Vulnerable JS Library which gives 27 alerts:
 
+- Risk: Medium
+- Confidence: Medium
+- CWE ID: 829
+- Source: Passive (10003 - Vulnerable JS Library (Powered by Retire.js))
 
+For this case study's web application, it has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system.
 
-The risk for the Vulnerable JS Library is this web application is determined as 'Medium'
+Furthermore, the risk for the Vulnerable JS Library is this web application is determined as 'Medium' with a confidence of also 'Medium'. 
+
 
 #### Mitigation
 The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
@@ -186,7 +192,23 @@ The developers are advised to upgrade to the latest version of the respective Ja
 Accurately identifying which library vulnerabilities in the web application can be difficult, so it is better to apply all available security updates regardless. For the vulnerabilities specifically for the web application in this case study, the vulnerability lies in the JS Library for the jquery-ui and moment.js. These two libraries are vulnerable due to their versions are not the latest one.
 For the jquery-ui library used in this web application is the version 1.12.1 while the library for moment.js is the version 2.29.1. Both of the versions need to be updated and the updated version of both of them is need to be used in order to reduce the vulnerability.
 
+Developers can use update the jquery-ui to version 1.13.2 where the issue is fixed based on CVE-2022-31160 where version prior to 1.13.2 are potentially vulnerable to cross-site scripting.
 
+* REFERENCES
+* JavaScript Library and Vulnerable JavaScript Library description,
+ - https://www.iothreat.com/blog/vulnerable-js-library-2#:~:text=The%20Vulnerable%20JS%20Library%20is,cause%20damage%20to%20the%20application.
+ - https://cwe.mitre.org/data/definitions/829.html
+ - https://portswigger.net/kb/issues/00500080_vulnerable-javascript-dependency
+ - https://blog.qualys.com/vulnerabilities-threat-research/2023/01/16/detection-of-vulnerabilities-in-javascript-libraries
+ - https://generalassemb.ly/blog/what-is-a-javascript-library/
+
+* Mitigation actions,
+- https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+
+* CVE-2022-31160 Detail,
+  - https://nvd.nist.gov/vuln/detail/CVE-2022-31160
+  - https://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/
+  
 ### 3.4 Information Disclosure
 - (Rahat)
 - 
