@@ -120,9 +120,7 @@ For this case study web application, which is the KOE official website, the web 
 
 The product must successfully trust any third-party functionality it incorporates, whether it be a web widget, library, or other source of capability. The feature could be malicious in nature if there aren't enough security measures in place (either because it originates from an unreliable source, is faked, or was altered while in route from a reliable source). Additionally, the functionality may have flaws of its own, or it may allow access to other features and state data that should be kept private to the base system, such as system state data, sensitive application data, or the DOM of a web application. Depending on the included functionality, this could have a variety of negative effects, but some examples include the introduction of malware, information exposure due to the provision of excessive privileges or permissions to the untrusted functionality, and DOM-based XSS.
 
-The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure.
-
-Also, the developers need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
+The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
 - This includes remove unused dependencies, unnecessary features, components, files, and documentation.
 - Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, OWASP Dependency Check, retire.js, etc.
 - Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. 
