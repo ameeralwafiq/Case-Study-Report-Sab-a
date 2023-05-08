@@ -9,12 +9,12 @@
 | 5 | MD MOSTAFIZUR RAHMAN RAHAT | 1823811 |
 
 ## Table of Contents
-| No. | Sub| Content                                                                                                    | Person in Charge |
-|-----|:--:|:-------------:                                                                                             | :---------------:|
+| No. | Sub| Content                                                                                                                      | Person in Charge |
+|-----|:--:|:-------------:                                                                                                               | :---------------:|
 | 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#10-brief-description)          | All |
 | 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#20-objectives)                          | All |
-| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30-alerts)                                 | All |
-| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#31-csrf-attack)                     | Tasya |
+| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30alerts)                                 | All |
+| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#31-csrf-attack)                     | Tasya |
 | -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                                     | Ghozi |
 | -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#33-js-library)                       | Ameer |
 | -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#34-information-disclosure) | Rahat |
@@ -31,7 +31,7 @@ In this case study, https://kulliyyah.iium.edu.my/koe/#  its web application vul
 
 ## 3.0 Alerts
 ### 3.1 CSRF attack
->>>>> a3cf62c766ce6da1b19effb663a257d472340230
+>>>>>>> a3cf62c766ce6da1b19effb663a257d472340230
 CWE ID : 352
 
 CSRF stands for Cross Site Request Forgery. CSRF is a type of security vulnerability that can occur in web application when an attacker creates a malicious page that make a request to the server on behalf of the victim's authentication or session identification cookie. Cross-site request forgery is the practise of tricking a user's browser into sending a request to a target web app on their behalf. The web application's trust in the user's browser is exploited by the attack. The user can be tricked into visiting a malicious website or clicking on a specifically created link, which the attacker can use to carry out unauthorised actions on the targeted web application.
@@ -96,7 +96,7 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     
 ### 3.2 CSP
 - (Ghozi)
->>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
+>>>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
 
 Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution.
@@ -106,36 +106,52 @@ Based on the result after scan the vulnerabilities on OWASP, this website has 31
 One of the evidence is
 
 ### 3.3 JS Library
-- (Ameer Al-Wafiq bin Norazam 2119005)
+- (Ameer Al-Wafiq bin Norazam - 2119005)
 >>>>>>> Passive (10003 - Vulnerable JS Library (Powered by Retire.js))
 CWE ID : 829
 
-JavaScript Library or JS Library is a ... Meanwhile, Vulnerable JS Library can be said when a JS Library used in the web application is vulnerable to attacks from the outside.
+JavaScript Library or JS Library is a collection of pre-written JavaScript codes that can be easily integrated with application projects. These libraries can provide a variety of benefits such as performance improvement, cross-browser compatibility and best practices to follow the latest development trends.
 
-Vulnerable JS Lirary of a web application can be exploited by attackes...
-Vulnerable JS Library are vulnerable because of...
+The Vulnerable JS Library is a common security issue that occurs when a web application uses outdated or unpatched JavaScript libraries. The users cannot ignore the updates as using a library with missing security patches can make the web application easily exploited.
+
+Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically enjoy the benefit of being heavily audited. This may mean that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.  Accurately identifying which library vulnerabilities apply to the web application can be difficult, so we recommend applying all available security updates regardless.
+
+For this case study web application, which is the KOE official website, the web application has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system. 
+
+The product must successfully trust any third-party functionality it incorporates, whether it be a web widget, library, or other source of capability. The feature could be malicious in nature if there aren't enough security measures in place (either because it originates from an unreliable source, is faked, or was altered while in route from a reliable source). Additionally, the functionality may have flaws of its own, or it may allow access to other features and state data that should be kept private to the base system, such as system state data, sensitive application data, or the DOM of a web application. Depending on the included functionality, this could have a variety of negative effects, but some examples include the introduction of malware, information exposure due to the provision of excessive privileges or permissions to the untrusted functionality, and DOM-based XSS.
+
+The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure.
+
+Also, the developers need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
+•	This includes remove unused dependencies, unnecessary features, components, files, and documentation.
+•	Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, OWASP Dependency Check, retire.js, etc.
+•	Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. 
+•	Only obtain the set of JS Library components from official sources and from secure links. Prefer signed packages to reduce the chance of including the vulnerable ones.
+For the prevention specifically for the web application in this case study, the vulnerability lies in the JS Library for the jquery-ui and moment.js. These two libraries are vulnerable due to their versions are not the latest one.
+For the jquery-ui library used in this web application is the version 1.12.1 while the library for moment.js is the version 2.29.1. Both of the versions need to be updated and the updated version of both of them is need to be used in order to reduce the vulnerability.
+
 
 ### 3.4 Information Disclosure
 - (Rahat)
 - 
 ### 3.5 Potential XSS
 - (Abdul Rashid bin Nuhairi - 1911767)
->>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
+>>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 CWE ID : 20
 
 Here are the results from OWASP ZAP that has been noted and its brief.
 
-**Description:** User-controllable HTML element attribute (potential XSS) is a type of vulnerability that can exist in websites, including those built using Wordpress. This vulnerability occurs when a website allows users to control certain attributes of HTML elements, such as the "src" attribute of an image tag or the "href" attribute of a link tag, without properly validating or sanitizing the input.
+Description: User-controllable HTML element attribute (potential XSS) is a type of vulnerability that can exist in websites, including those built using Wordpress. This vulnerability occurs when a website allows users to control certain attributes of HTML elements, such as the "src" attribute of an image tag or the "href" attribute of a link tag, without properly validating or sanitizing the input.
 
-**Risk: informational** - "Risk: informational" means that the vulnerability identified by the tool does not pose an immediate threat or allow for direct exploitation, but provides information that could be used by an attacker to further exploit vulnerabilities or launch a more sophisticated attack. These types of vulnerabilities do not usually require immediate remediation, but should be addressed as part of an overall security program.
+Risk: informational - "Risk: informational" means that the vulnerability identified by the tool does not pose an immediate threat or allow for direct exploitation, but provides information that could be used by an attacker to further exploit vulnerabilities or launch a more sophisticated attack. These types of vulnerabilities do not usually require immediate remediation, but should be addressed as part of an overall security program.
 
-**Confidence: low** - "Confidence: low" means that the tool is not completely certain that the identified vulnerability exists. The confidence level is based on the reliability and accuracy of the tool's detection mechanisms, and is influenced by various factors such as the complexity of the application, the depth of the scan, and the level of interaction with the target.
+Confidence: low - "Confidence: low" means that the tool is not completely certain that the identified vulnerability exists. The confidence level is based on the reliability and accuracy of the tool's detection mechanisms, and is influenced by various factors such as the complexity of the application, the depth of the scan, and the level of interaction with the target.
 
-**Source: passive (10031)** - "Source: passive (10031)" refers to the method used by the tool to detect the vulnerability. "Passive" means that the tool is monitoring network traffic and analyzing responses from the target, without actually sending any payloads or inputs that could affect the application. "10031" is a unique identifier for the specific plugin or rule that detected the vulnerability. In this case, it could refer to a plugin or rule related to information disclosure or sensitive data leakage.
+Source: passive (10031) - "Source: passive (10031)" refers to the method used by the tool to detect the vulnerability. "Passive" means that the tool is monitoring network traffic and analyzing responses from the target, without actually sending any payloads or inputs that could affect the application. "10031" is a unique identifier for the specific plugin or rule that detected the vulnerability. In this case, it could refer to a plugin or rule related to information disclosure or sensitive data leakage.
 
-**CWE ID: 20** refers to the Common Weakness Enumeration (CWE) identifier for the vulnerability category "Improper Input Validation." CWE is a community-developed dictionary of common software security weaknesses, which provides a standardized language for describing security vulnerabilities in software and hardware.
+CWE ID: 20 refers to the Common Weakness Enumeration (CWE) identifier for the vulnerability category "Improper Input Validation." CWE is a community-developed dictionary of common software security weaknesses, which provides a standardized language for describing security vulnerabilities in software and hardware.
 Specifically, CWE ID: 20 refers to cases where input from a user or an external system is not properly validated, allowing an attacker to inject malicious data into the system or execute unintended actions.
 
-**WASC ID: 20** refers to the Web Application Security Consortium (WASC) identifier for the vulnerability category "Improper Input Handling." WASC is a group of international experts in web application security, who have created a set of guidelines and best practices for securing web applications.
+WASC ID: 20 refers to the Web Application Security Consortium (WASC) identifier for the vulnerability category "Improper Input Handling." WASC is a group of international experts in web application security, who have created a set of guidelines and best practices for securing web applications.
 
-**Prevention:** To prevent user-controllable HTML element attribute vulnerabilities and potential XSS attacks, it's important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. . Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
+Prevention: To prevent user-controllable HTML element attribute vulnerabilities and potential XSS attacks, it's important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. . Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
