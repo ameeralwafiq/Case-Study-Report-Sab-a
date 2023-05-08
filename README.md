@@ -215,7 +215,48 @@ Developers can use update the jquery-ui to version 1.13.2 where the issue is fix
   - https://blog.jqueryui.com/2022/07/jquery-ui-1-13-2-released/
   
 ### 3.4 Information Disclosure
-- (Rahat)
+- (Md Mostafizur Rahman Rahat - 1823811)
+>>>>>>> Passive (10023 - Information Disclosure - Debug Error Messages)
+CWE ID : 200
+
+#### Defination
+When an application fails to adequately safeguard sensitive and private information from exposure to users who are not ordinarily authorized to access that data, this is known as information disclosure. An application failing to protect information correctly may result in information disclosure. Even if such flaws cannot be exploited in most situations, web application security experts still consider them problematic. This is due to the fact that they enable malevolent hackers to collect vital information that may be utilized later in the attack lifecycle. Attackers, when armed with such data, are able to do considerably more than they would be able to if they did not have it.
+
+The failure to disable debugging and diagnostic features can sometimes provide attackers with useful tools to help them obtain sensitive information, and developer comments in markup are sometimes visible to users in the production environment. It is possible for attackers to enumerate sensitive data, such as valid user passwords, if a website sends separate replies when different error conditions occur, as is the case when using the default setup.
+
+Information disclosure vulnerabilities may have direct and indirect effects, depending on the website's aim and what an attacker can access. Spreading private information may have a major effect on impacted parties. Leaking technical details like directory structure or third-party frameworks may not have a direct effect. This might be the key to many additional vulnerabilities in the wrong hands. How the attacker uses this information determines the degree of damage.
+
+#### Automated Scan Rsults from OWASP
+The outcome of an automated OWASP scan for information disclosure is as follows:
+- URL: https://kulliyyah.iium.edu.my/koe/
+- Risk: low
+- Confidence: medium
+- CWE ID: 200
+- WASC ID: 13
+- Source: Passive (10023 - Information Disclosure - Debug Error Messages)
+
+Risk : The risk of information disclosure is low when the potential for abuse or damage is low. Thus, disclosing some sensitive information has no significant effect.
+CWE ID - 200 : CWE-200 is the CWE designation for "Exposure of Sensitive Information to an Unauthorised Actor" in software security. A security breach occurs when confidential information is accidentally shared with the wrong person or system. Passwords, bank data, personal identifying information, and other private data are all sensitive information that might be hacked.
+WASC ID - 13 : For online applications, "Information Leakage and Improper Error Handling" is WASC (Web Application Security Consortium) ID 13's area of concern. Information exposure through error messages, insecure error handling, and debug information leaking are all examples of vulnerabilities in this class that might compromise a website's or server's security.
+Passive - 10023 : "Passive (10023 - Information Disclosure - Debug Error Messages)" may refer to a web application vulnerability that exposes sensitive data via debug error messages.
+ Attackers may leverage stack traces, variable names, and database queries in debugging error messages to find and exploit program vulnerabilities
+#### Mitigation
+Information disclosure security risks are serious. They enable hackers to get valuable and sensitive information about their target by doing simple tests or searching public sites. 
+- Avoid sending response headers or background information that reveals backend technology type, version, or configuration from the website's server.
+- Make sure open server port services don't leak their builds and versions.
+- When the web application fails, handle all exceptions and ensure no technical information is provided.
+- Never hardcode credentials, API keys, IP addresses, first names, or last names in the code, even in comments.
+- Never upload sensitive data, files, or other material to web servers.
+- Check each request to create/edit/view/delete resources for correct access restrictions to avoid privilege escalation and protect personal information.
+- Backend programming should use enough validations to detect all errors and avoid data leaks.
+- Disallow directory listing on the web server and force the web application to display a default page.
+
+#### Refference 
+https://www.invicti.com/blog/web-security/information-disclosure-issues-attacks/
+https://portswigger.net/web-security/information-disclosure
+https://cwe.mitre.org/data/definitions/200.html
+https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/classification/wasc/
+
 - 
 ### 3.5 Potential XSS
 - (Abdul Rashid bin Nuhairi - 1911767)
