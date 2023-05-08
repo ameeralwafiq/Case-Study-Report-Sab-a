@@ -151,12 +151,12 @@ This is an example of how the CSP header looks like:
 ```
 
 * REFERENCES
-Content Security Policy (CSP) explanation, 
+*Content Security Policy (CSP) explanation, 
     from https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP ,
          https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html 
-CVSS User Guide,
+* CVSS User Guide,
     from https://www.first.org/cvss/user-guide 
-CVSS Calculator,
+* CVSS Calculator,
     from https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
 
 ### 3.3 JS Library
