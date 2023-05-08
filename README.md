@@ -11,14 +11,14 @@
 ## Table of Contents
 | No. | Sub| Content                                                                                                                      | Person in Charge |
 |-----|:--:|:-------------:                                                                                                               | :---------------:|
-| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#brief-description)          | All |
-| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#objectives)                          | All |
-| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#alerts)                                 | All |
-| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#1-csrf-attack)                     | Tasya |
-| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#2-csp)                                     | Ghozi |
-| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#3-js-library)                       | Ameer |
-| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#4-information-disclosure) | Rahat |
-| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#5-potential-xss)                 | Rashid |
+| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#10-brief-description)          | All |
+| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#20-objectives)                          | All |
+| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30alerts)                                 | All |
+| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#31-csrf-attack)                     | Tasya |
+| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                                     | Ghozi |
+| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#33-js-library)                       | Ameer |
+| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#34-information-disclosure) | Rahat |
+| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#35-potential-xss)                 | Rashid |
 
 
 ## 1.0 Brief Description
