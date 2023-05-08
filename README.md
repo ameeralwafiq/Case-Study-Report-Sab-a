@@ -179,8 +179,13 @@ This is the result for the Vulnerable JS Library which gives 27 alerts:
 
 For this case study's web application, it has a CWE-829 vulnerability, which is caused by the improper validation of user input that is used to import, require, or include executable functionality (such as a library) from a source outside of the intended control sphere, allowing an attacker to inject malicious code and potentially execute it on the affected system.
 
-Furthermore, the risk for the Vulnerable JS Library is this web application is determined as 'Medium' with a confidence of also 'Medium'. 
+A Vulnerable JavaScript Library can lead to a breach of confidentiality if an attacker is able to exploit the vulnerability to gain access to sensitive data. In the case of CVE-2022-31160, the vulnerability is related to cross-site scripting (XSS) and could potentially allow an attacker to inject malicious code into the web application, potentially leading to the theft of sensitive data.
 
+On top of that, Vulnerable JS Library can lead to a breach of integrity if an attacker is able to exploit the vulnerability to modify data or inject malicious code into the web application. In the case of CVE-2022-31160, the vulnerability is related to XSS and could potentially allow an attacker to inject malicious code into the web application, potentially leading to the modification of data or other unintended consequences.
+
+LasTly, Vulnerable JS Library also can lead to a breach of availability if an attacker is able to exploit the vulnerability to cause a denial of service (DoS) attack or otherwise disrupt the functioning of the web application. In the case of CVE-2022-31160, the vulnerability is related to XSS and could potentially allow an attacker to inject malicious code into the web application, potentially leading to a DoS attack. 
+
+In summary, a vulnerable JavaScript library in a web application can have a significant impact on the confidentiality, integrity, and availability of the system. In the case of CVE-2022-31160, the vulnerability is related to XSS and has a medium impact on confidentiality, integrity, and availability, with a CVSS score of 5.3, 6.5, and 6.1 respectively.
 
 #### Mitigation
 The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
