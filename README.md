@@ -86,6 +86,15 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     
 ### 2. CSP
 - (Ghozi)
+>>>>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
+CWE ID : 693
+
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution.
+
+Based on the result after scan the vulnerabilities on OWASP, this website has 314 absences of anti-CSRF tokens on the HTML form.
+
+One of the evidence is
+
 ### 3. JS Library
 - (Ameer)
 ### 4. Information Disclosure
