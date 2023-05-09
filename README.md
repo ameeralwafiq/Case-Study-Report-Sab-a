@@ -301,9 +301,11 @@ Confidentiality Impact: Low
 
 Since the risk is classified as "Informational," it is unlikely that sensitive or confidential information would be compromised.
 
+
 Integrity Impact: Low to Medium
 
 The CWE ID 20 suggests that there is a vulnerability related to input validation and sanitization, which could potentially lead to a compromise of data integrity if exploited. However, since the attack source is "Passive," the likelihood of exploitation is lower.
+
 
 Availability Impact: Low
 
