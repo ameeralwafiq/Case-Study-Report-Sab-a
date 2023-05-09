@@ -289,8 +289,7 @@ Confidence: low - "Confidence: low" means that the tool is not completely certai
 
 Source: passive (10031) - "Source: passive (10031)" refers to the method used by the tool to detect the vulnerability. "Passive" means that the tool is monitoring network traffic and analyzing responses from the target, without actually sending any payloads or inputs that could affect the application. "10031" is a unique identifier for the specific plugin or rule that detected the vulnerability. In this case, it could refer to a plugin or rule related to information disclosure or sensitive data leakage.
 
-CWE ID: 20 refers to the Common Weakness Enumeration (CWE) identifier for the vulnerability category "Improper Input Validation." CWE is a community-developed dictionary of common software security weaknesses, which provides a standardized language for describing security vulnerabilities in software and hardware.
-Specifically, CWE ID: 20 refers to cases where input from a user or an external system is not properly validated, allowing an attacker to inject malicious data into the system or execute unintended actions.
+CWE ID: 20 refers to cases where input from a user or an external system is not properly validated, allowing an attacker to inject malicious data into the system or execute unintended actions.
 
 WASC ID: 20 refers to the Web Application Security Consortium (WASC) identifier for the vulnerability category "Improper Input Handling." WASC is a group of international experts in web application security, who have created a set of guidelines and best practices for securing web applications.
 
