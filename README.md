@@ -262,10 +262,10 @@ Information disclosure security risks are serious. They enable hackers to get va
 - Disallow directory listing on the web server and force the web application to display a default page.
 
 #### References
-https://www.invicti.com/blog/web-security/information-disclosure-issues-attacks/
-https://portswigger.net/web-security/information-disclosure
-https://cwe.mitre.org/data/definitions/200.html
-https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/classification/wasc/
+- https://www.invicti.com/blog/web-security/information-disclosure-issues-attacks/
+- https://portswigger.net/web-security/information-disclosure
+- https://cwe.mitre.org/data/definitions/200.html
+- https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/classification/wasc/
 
 - 
 ### 3.5 Potential XSS
