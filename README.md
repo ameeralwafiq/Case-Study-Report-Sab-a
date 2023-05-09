@@ -294,6 +294,8 @@ Specifically, CWE ID: 20 refers to cases where input from a user or an external 
 
 WASC ID: 20 refers to the Web Application Security Consortium (WASC) identifier for the vulnerability category "Improper Input Handling." WASC is a group of international experts in web application security, who have created a set of guidelines and best practices for securing web applications.
 
+TAG: OWASP_2021_A03: This refer to user-supplied data is not validated, filtered, or sanitized by the application.
+
 #### Prevention
 To prevent user-controllable HTML element attribute vulnerabilities, it is important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
 
@@ -302,5 +304,6 @@ i - Input Validation: The WordPress Core provides several functions that can be 
 ii - Escaping Functions: Used to sanitize user input before it is displayed on the website.
 
 #### References
-
+- https://owasp.org/Top10/A03_2021-Injection/
+- https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 
