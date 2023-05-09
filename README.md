@@ -169,9 +169,7 @@ CWE ID : 829
 #### Identification
 JavaScript Library or JS Library is a collection of pre-written JavaScript codes that can be easily integrated with application projects. This re-writing of code and recognizing that certain JS functions need to be implemented multiple times led to the development of JavaScript libraries and frameworks. These libraries can provide a variety of benefits such as performance improvement, cross-browser compatibility and best practices to follow the latest development trends.
 
-The Vulnerable JS Library is a common security issue that occurs when a web application uses outdated or unpatched JavaScript libraries. The users cannot ignore the updates as using a library with missing security patches can make the web application easily exploited.
-
-Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. Furthermore, common JavaScript libraries typically have a lot of users taking care of them. This means that bugs are quickly identified and patched upstream, resulting in a steady stream of security updates that need to be applied. Some library vulnerabilities expose every application that imports the library, but others only affect applications that use certain library features.
+The Vulnerable JS Library is a common security issue that occurs when a web application uses outdated or unpatched JavaScript libraries. The users cannot ignore the updates as using a library with missing security patches can make the web application easily exploited. Moreover, the use of third-party JavaScript libraries can introduce a range of DOM-based vulnerabilities, including some that can be used to hijack user accounts like DOM-based XSS vulnerability. 
 
 #### Evaluation 
 This is the result for the Vulnerable JS Library which gives 27 alerts:
