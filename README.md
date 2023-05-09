@@ -15,19 +15,17 @@
 | 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#20-objectives)                               | All |
 | 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30alerts)                                      | All |
 | -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#31-csrf-attack)                            | Tasya |
-| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                                           | Ghozi |
+| -- | 3.2 |[Content Security Policy (CSP)](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                 | Ghozi |
 | -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#33-js-library)                             | Ameer |
 | -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#34-information-disclosure)     | Rahat |
 | -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#35-potential-xss)                       | Rashid |
 
 
 ## 1.0 Brief Description
-- 
 In this case study, https://kulliyyah.iium.edu.my/koe/#  its web application vulnerability will be evaluated. This website is serves a platform to share wide range of information and resources about engineering faculty in IIUM. This website serves as virtual gateways to the institution, providing a range of features and sections that satisfy the requirements of different users. Generally, this website gives an overview of Kuliyyah of Engineering IIUM faculty, including information on its vision, mission, and building layout. The profile of faculty officers and staff also included, with the purpose of show their credentials, areas of interest om research, as well as their contact details. Visitors are kept up to date on the most recent accomplishments, advancements, and future events within the academic community through the news and events pages.  
 
 ## 2.0 Objectives
-- The objectives of this case study is to identify the vulnerabilities that exists in the web application https://kulliyyah.iium.edu.my/koe/, evaluate the vulnerabilities of the web application and find the ways to prevent and mitigate the vulnerabilities of the web application...
-- 
+- The objectives of this case study is to identify the vulnerabilities that exists in the website https://kulliyyah.iium.edu.my/koe/, evaluate the vulnerabilities of the website and find the ways to prevent and mitigate the vulnerabilities of it.
 
 ## 3.0 Alerts
 ### 3.1 CSRF attack
@@ -91,8 +89,7 @@ It will be challenging to match the CSRF token values if an attacker tries to fa
 
 In addition, preventing the XSS first could help to prevent CSRF. Enabling user interation whenever user needs to perform update to the sensitive data also able to mitigate the CSRF attacks because the attacker still needs to get the user's actual password. This could be done by implementing reauthentication mechanisms, CAPTCHA challenges, and one time token. 
 
-* REFERENCES
-
+#### References
 Cross Site Request Forgery (CSRF). (n.d.). OWASP Foundation. Retrieved May 7, 2023, 
     from https://owasp.org/www-community/attacks/csrf
 CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved May 7, 2023, 
@@ -101,7 +98,7 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     from https://brightsec.com/blog/csrf-mitigation/#double-submitting-cookies
     
     
-### 3.2 CSP
+### 3.2 Content Security Policy (CSP)
 - (Ghozi)
 >>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
@@ -154,7 +151,7 @@ This is an example of how the CSP header looks like:
 
 ```
 
-* REFERENCES
+#### References
 * Content Security Policy (CSP) explanation, 
     from https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP ,
          https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html 
@@ -206,7 +203,7 @@ For the jquery-ui library used in this web application is the version 1.12.1 whi
 
 Developers can use update the jquery-ui to version 1.13.2 where the issue is fixed based on CVE-2022-31160 where version prior to 1.13.2 are potentially vulnerable to cross-site scripting.
 
-#### REFERENCES
+#### References
 * JavaScript Library and Vulnerable JavaScript Library description,
   - https://portswigger.net/kb/issues/00500080_vulnerable-javascript-dependency
   - https://blog.qualys.com/vulnerabilities-threat-research/2023/01/16/detection-of-vulnerabilities-in-javascript-libraries
@@ -264,7 +261,7 @@ Information disclosure security risks are serious. They enable hackers to get va
 - Backend programming should use enough validations to detect all errors and avoid data leaks.
 - Disallow directory listing on the web server and force the web application to display a default page.
 
-#### Refference 
+#### References
 https://www.invicti.com/blog/web-security/information-disclosure-issues-attacks/
 https://portswigger.net/web-security/information-disclosure
 https://cwe.mitre.org/data/definitions/200.html
@@ -299,3 +296,11 @@ WASC ID: 20 refers to the Web Application Security Consortium (WASC) identifier 
 
 #### Prevention
 To prevent user-controllable HTML element attribute vulnerabilities, it is important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
+
+There are some real-world examples of plugins and functions that can be used to help prevent user-controllable HTML element attribute vulnerabilities in WordPress:
+i - Input Validation: The WordPress Core provides several functions that can be used to validate user input, such as is_email() and is_numeric(). These functions can be used to check whether input is in the expected format or range, and to reject input that contains unexpected characters or values.
+ii - Escaping Functions: Used to sanitize user input before it is displayed on the website.
+
+#### References
+
+
