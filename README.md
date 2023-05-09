@@ -99,7 +99,7 @@ CSRF Attacks: Anatomy, Prevention, and XSRF Tokens. (n.d.). Acunetix. Retrieved 
     
     
 ### 3.2 Content Security Policy (CSP)
-- (Ghozi)
+- (Robbani Ghozi Fikri - 1832765)
 >>>>> Passive (10038 - Content Security Policy (CSP) Header Not Set)
 CWE ID : 693
 
