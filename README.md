@@ -9,16 +9,16 @@
 | 5 | MD MOSTAFIZUR RAHMAN RAHAT | 1823811 |
 
 ## Table of Contents
-| No. | Sub| Content                                                                                                                      | Person in Charge |
-|-----|:--:|:-------------:                                                                                                               | :---------------:|
-| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#10-brief-description)          | All |
-| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#20-objectives)                          | All |
-| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30alerts)                                 | All |
-| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#31-csrf-attack)                     | Tasya |
-| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                                     | Ghozi |
-| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#33-js-library)                       | Ameer |
-| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#34-information-disclosure) | Rahat |
-| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#35-potential-xss)                 | Rashid |
+| No. | Sub| Content                                                                                                         | Person in Charge |
+|-----|:--:|:-------------:                                                                                                  | :----------:|
+| 1.0 | -- |[Brief Description ](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#10-brief-description)               | All |
+| 2.0 | -- |[Objective](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#20-objectives)                               | All |
+| 3.0 | -- |[Alerts](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#30alerts)                                      | All |
+| -- | 3.1 |[CSRF Attack](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a#31-csrf-attack)                            | Tasya |
+| -- | 3.2 |[CSP](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#32-csp)                                           | Ghozi |
+| -- | 3.3 |[JS Library](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#33-js-library)                             | Ameer |
+| -- | 3.4 |[Information Disclosure](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#34-information-disclosure)     | Rahat |
+| -- | 3.5 |[Potential XSS](https://github.com/ameeralwafiq/Case-Study-Report-Sab-a/#35-potential-xss)                       | Rashid |
 
 
 ## 1.0 Brief Description
@@ -276,10 +276,16 @@ https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/classification
 >>>>>>> Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 CWE ID : 20
 
-Here are the results from OWASP ZAP that has been noted and its brief.
+#### Identification
+User-controllable HTML element attribute (potential XSS) is a type of vulnerability that can exist in websites, including those built using Wordpress. This vulnerability occurs when a website allows users to control certain attributes of HTML elements, such as the "src" attribute of an image tag or the "href" attribute of a link tag, without properly validating or sanitizing the input.
 
-Description: User-controllable HTML element attribute (potential XSS) is a type of vulnerability that can exist in websites, including those built using Wordpress. This vulnerability occurs when a website allows users to control certain attributes of HTML elements, such as the "src" attribute of an image tag or the "href" attribute of a link tag, without properly validating or sanitizing the input.
+- Risk: Informational
+- Confidence: Low
+- CWE ID: 20
+- WASC ID: 20
+- Source: Passive (10031 - User Controllable HTML Element Attribute (Potential XSS))
 
+#### Evaluation 
 Risk: informational - "Risk: informational" means that the vulnerability identified by the tool does not pose an immediate threat or allow for direct exploitation, but provides information that could be used by an attacker to further exploit vulnerabilities or launch a more sophisticated attack. These types of vulnerabilities do not usually require immediate remediation, but should be addressed as part of an overall security program.
 
 Confidence: low - "Confidence: low" means that the tool is not completely certain that the identified vulnerability exists. The confidence level is based on the reliability and accuracy of the tool's detection mechanisms, and is influenced by various factors such as the complexity of the application, the depth of the scan, and the level of interaction with the target.
@@ -291,4 +297,5 @@ Specifically, CWE ID: 20 refers to cases where input from a user or an external 
 
 WASC ID: 20 refers to the Web Application Security Consortium (WASC) identifier for the vulnerability category "Improper Input Handling." WASC is a group of international experts in web application security, who have created a set of guidelines and best practices for securing web applications.
 
-Prevention: To prevent user-controllable HTML element attribute vulnerabilities and potential XSS attacks, it's important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. . Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
+#### Prevention
+To prevent user-controllable HTML element attribute vulnerabilities, it is important to properly validate and sanitize all user input on the server-side, and to use secure coding practices when developing websites and web applications. Additionally, websites should use Content Security Policy (CSP) headers to restrict the types of content that can be loaded on their pages, which can help mitigate the impact of XSS attacks. Additionally, WordPress provides several built-in functions and plugins that can be used to sanitize and validate user input, but it's up to website developers to implement them correctly. 
