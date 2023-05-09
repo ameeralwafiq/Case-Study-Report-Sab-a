@@ -190,8 +190,8 @@ Lastly, Vulnerable JS Library also can lead to a breach of availability if an at
 In summary, a vulnerable JavaScript library in a web application can have a significant impact on the confidentiality, integrity, and availability of the system. In the case of CVE-2022-31160, the vulnerability is related to XSS and has a medium impact on confidentiality, integrity, and availability, with a CVSS score of 5.3, 6.5, and 6.1 respectively.
 
 #### Prevention / Mitigation
-The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. 
-- Remove unused dependencies, unnecessary features, components, files, and documentation. This includes:
+The developers are advised to upgrade to the latest version of the respective JavaScript Library to ensure they are up-to-date and secure. They also need to ensure that a patch-management strategy takes place and executed, to ensure that security updates are promptly applied to all third-party libraries in the web application. This includes:
+- Remove unused dependencies, unnecessary features, components, files, and documentation.
 - Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, OWASP Dependency Check, retire.js, etc.
 - Continuously monitor sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components. 
 - Only obtain the set of JS Library components from official sources and from secure links. Prefer signed packages to reduce the chance of including the vulnerable ones.
